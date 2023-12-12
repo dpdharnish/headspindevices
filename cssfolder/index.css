@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(255,165,0,0.3);
+}
+h1 {
+    padding: 30px;
+    background-color: orange;
+    font-size: 50px;
+    color: aliceblue;
+    margin: 0px;
+    text-align: center;
+}
+div.entry {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 100px;
+}
+div.entry > h2 {
+    flex-basis: 16%;
+    font-size: 2.5rem;
+    color: maroon;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+div.entry > input {
+    flex-basis: 70%;
+    height: 40px;
+    color: maroon;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+#myInput::placeholder {
+    text-align: center;
+}
+div.entry > div.button {
+    font-size: 2.5rem;
+    width: 145px;
+    height: 48px;
+    text-align: center;
+    color: firebrick;
+    background-color:rgba(255,165,0,0.9); 
+    border-radius: 10px;
+    align-self: center;
+    cursor: pointer;
+}
+div.entry > div.reset {
+    font-size: 2.5rem;
+    width: 145px;
+    height: 48px;
+    text-align: center;
+    color: firebrick;
+    background-color:rgba(255,165,0,0.9); 
+    border-radius: 10px;
+    align-self: center;
+    cursor: pointer;
+}
+div.entry > div.button:active,div.entry > div.reset:active {
+    color: firebrick;
+    background-color:rgba(255,165,0,0.6); 
+    border-top: 1px solid black;
+    border-left:1px solid black;
+}
+div.data {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    width: auto;
+    text-align: center;
+    color: brown;
+    align-self: center;
+    margin-top:20px;
+}
+div.data h2.border {
+    border:0.5px solid brown;
+    padding: 10px 0px;
+    margin: 0px;
+    
+}
+div.data h2.weight {
+    font-weight:normal;
+}
+@media (max-width:900px) {
+    div.entry > input {
+        margin-top: 0px;
+        flex-basis: 90%;
+    }
+    div.entry {
+        padding: 0px 20px;
+    }
+    div.data h2 {
+        font-size: 1.1rem;
+    }
+}
