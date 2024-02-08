@@ -30,6 +30,7 @@ $("div.button").on("click", function() {
     })
 });
 
+
 $("div.reset").on("click", function() {
     $("div.data h2").remove();
     $("#myInput").val("");
